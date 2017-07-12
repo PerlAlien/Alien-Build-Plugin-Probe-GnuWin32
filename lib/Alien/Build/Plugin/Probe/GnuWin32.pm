@@ -12,6 +12,32 @@ use List::Util ();
 # ABSTRACT: Probe for GnuWin32 packages using the Windows registry
 # VERSION
 
+=head1 SYNOPSIS
+
+ use alienfile;
+ 
+ plugin 'Probe::GnuWin32' => (
+   registry_key_regex => 'flex',
+   exe_name           => 'flex',
+ );
+
+=head1 DESCRIPTION
+
+This plugin is used specifically to find tools that are provided by the GnuWin32 project.
+It used to be part of the L<Alien::Build> core, but is now distributed separately.
+
+=head1 SEE ALSO
+
+=over 4
+
+=item L<alienfile>
+
+=item L<Alien::Build>
+
+=back
+
+=cut
+
 has native_only         => 0;
 has registery_key_regex => undef;
 has registry_key_regex  => undef;
