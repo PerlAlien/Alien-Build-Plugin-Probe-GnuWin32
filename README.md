@@ -1,15 +1,17 @@
-# Alien::Build::Plugin::Probe::GnuWin32 [![Build Status](https://secure.travis-ci.org/plicease/Alien-Build-Plugin-Probe-GnuWin32.png)](http://travis-ci.org/plicease/Alien-Build-Plugin-Probe-GnuWin32)
+# Alien::Build::Plugin::Probe::GnuWin32 ![linux](https://github.com/PerlAlien/Alien-Build-Plugin-Probe-GnuWin32/workflows/linux/badge.svg) ![macos](https://github.com/PerlAlien/Alien-Build-Plugin-Probe-GnuWin32/workflows/macos/badge.svg) ![windows](https://github.com/PerlAlien/Alien-Build-Plugin-Probe-GnuWin32/workflows/windows/badge.svg) ![cygwin](https://github.com/PerlAlien/Alien-Build-Plugin-Probe-GnuWin32/workflows/cygwin/badge.svg) ![msys2-mingw](https://github.com/PerlAlien/Alien-Build-Plugin-Probe-GnuWin32/workflows/msys2-mingw/badge.svg)
 
 Probe for GnuWin32 packages using the Windows registry
 
 # SYNOPSIS
 
-    use alienfile;
-    
-    plugin 'Probe::GnuWin32' => (
-      registry_key_regex => 'flex',
-      exe_name           => 'flex',
-    );
+```perl
+use alienfile;
+
+plugin 'Probe::GnuWin32' => (
+  registry_key_regex => 'flex',
+  exe_name           => 'flex',
+);
+```
 
 # DESCRIPTION
 
